@@ -6,13 +6,14 @@ import {
 } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
 
+import { fetchCardData } from '@/app/lib/data';
 const iconMap = {
   collected: BanknotesIcon,
   customers: UserGroupIcon,
   pending: ClockIcon,
   invoices: InboxIcon,
 };
-import { fetchCardData } from '@/app/lib/data';
+
 
 export default async function CardWrapper() {
   const {
